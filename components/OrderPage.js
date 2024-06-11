@@ -78,8 +78,6 @@ export default class OrderPage extends HTMLElement {
       this.#user.name = '';
       this.#user.email = '';
       this.#user.phone = '';
-
-      // TODO: sent user and cart's details to the server
     });
 
     // Set double data binding

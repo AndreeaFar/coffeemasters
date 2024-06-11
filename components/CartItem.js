@@ -7,7 +7,8 @@ export default class CartItem extends HTMLElement {
 
   connectedCallback() {
     const item = JSON.parse(this.dataset.item);
-    this.innerHTML = ''; // Clear the element
+    // Clear the element
+    this.innerHTML = '';
 
     const template = document.getElementById('cart-item-template');
     const content = template.content.cloneNode(true);

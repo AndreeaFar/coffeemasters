@@ -7,7 +7,7 @@ const Router = {
         Router.go(href);
       });
     });
-    // It listen for history changes
+    // listen for history changes
     window.addEventListener('popstate', (event) => {
       Router.go(event.state.route, false);
     });
